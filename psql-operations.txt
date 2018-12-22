@@ -1,0 +1,2 @@
+su postgres -c "psql -c \"create user patrycja with password 'mypassword';\"" #not secure
+su postgres -c "psql -c \"create database todoapp owner patrycja encoding 'utf-8';\""
