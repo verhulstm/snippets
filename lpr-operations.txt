@@ -1,0 +1,2 @@
+lpr p15.pdf -o page-ranges=7-17
+lpr -o fit-to-page
