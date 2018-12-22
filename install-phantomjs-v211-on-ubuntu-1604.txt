@@ -1,0 +1,12 @@
+sudo apt -y remove phantomjs
+sudo apt -y install build-essential
+sudo apt -y install chrpath
+sudo apt -y install libssl-dev
+sudo apt -y install libxft-dev
+sudo apt -y install libfreetype6-dev
+sudo apt -y install libfreetype6
+sudo apt -y install libfontconfig1-dev
+sudo apt -y install libfontconfig1
+sudo wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
+sudo tar xvjf phantomjs-2.1.1-linux-x86_64.tar.bz2 -C /usr/local/share/
+sudo ln -s /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin/
