@@ -2,9 +2,13 @@ cd /etc/yum.repos.d/
 rm virtualbox.repo*
 wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
 cd -
+
+rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+
 yum update -y
 yum groupinstall -y 'Development Tools'
-rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 yum install -y binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms
 yum install -y VirtualBox-6.0
+
+/usr/lib/virtualbox/vboxdrv.sh setup
 usermod -a -G vboxusers user
