@@ -1,3 +1,5 @@
 mkdir -p ~/.ssh
 cp /vagrant/id* ~/.ssh
 chmod 400 ~/.ssh/id_rsa
+git config --global user.name "verhulstm"
+git config --global user.email "michael@terminallabs.com"
