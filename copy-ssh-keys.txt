@@ -1,3 +1,4 @@
+# run with deescalated user
 mkdir -p ~/.ssh
 cp /vagrant/id* ~/.ssh
 chmod 400 ~/.ssh/id_rsa
