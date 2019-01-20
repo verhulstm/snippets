@@ -5,6 +5,8 @@ apt -y install build-essential \
   git \
   zip \
   unzip \
+  flex \
+  bison \
   libreadline7 \
   libreadline-dev \
   zlib1g \
