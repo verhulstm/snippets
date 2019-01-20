@@ -11,5 +11,5 @@ apt -y install build-essential \
   zlib1g-dev
 
 su -m $SUDO_USER <<'EOF'
-git clone git@github.com:postgres/postgres.git
+GIT_SSL_NO_VERIFY=true git clone git@github.com:postgres/postgres.git
 EOF
