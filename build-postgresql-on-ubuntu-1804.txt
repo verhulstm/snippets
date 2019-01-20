@@ -9,3 +9,7 @@ apt -y install build-essential \
   libreadline-dev \
   zlib1g \
   zlib1g-dev
+
+su -m $SUDO_USER <<'EOF'
+git clone git@github.com:postgres/postgres.git
+EOF
