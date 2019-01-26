@@ -16,4 +16,6 @@ su -m $SUDO_USER <<'EOF'
 git clone https://github.com/postgres/postgres.git
 cd postgres
 git checkout REL9_6_STABLE
+./configure
+make
 EOF
